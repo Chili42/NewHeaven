@@ -29,7 +29,7 @@ $resultado = number_format($resultado,'2');
 							</div>
 							<div class="col-xs-6">
 								<button type="button" class="btn btn-primary btn-sm btn-block">
-									<span class="glyphicon glyphicon-share-alt"></span> Continue montando o pedido
+									<span class="glyphicon glyphicon-share-alt"></span> adicione avulso
 								</button>
 							</div>
 						</div>
