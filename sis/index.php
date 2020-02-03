@@ -179,26 +179,17 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-star"></i> Montar pedido <i class="fa fa-fw fa-angle-down pull-right"></i></a>
-                        <ul id="submenu-1" class="collapse">
-                            <li><a href="montarpedidocombo.php"><i class="fa fa-angle-double-right"></i> Combo</a></li>
-                            <li><a href="montarpedidoavulso.php"><i class="fa fa-angle-double-right"></i> Avulso</a></li>
-
-                        </ul>
+                        <a href="montarpedidocombo.php"><i class="fa fa-fw fa-star"></i> Montar pedido <i class="fa fa-fw pull-right"></i></a>
                     </li>
                     <li>
-                        <a href="#" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i>  listar pedidos <i class="fa fa-fw fa-angle-down pull-right"></i></a>
-                        <ul id="submenu-2" class="collapse">
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.1</a></li>
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.2</a></li>
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li>
-                        </ul>
+                        <a href="listarpedido.php" data-toggle="collapse" data-target="#submenu-2"><i class="fa fa-fw fa-star"></i>  listar pedidos <i class="fa fa-fw pull-right"></i></a>
+            
                     </li>
                     <li>
-                        <a href="investigaciones/favoritas"><i class="fa fa-fw fa-user-plus"></i> Cadastrar cliente</a>
+                        <a href="cadastrarcliente.php"><i class="fa fa-fw fa-user-plus"></i> Cadastrar cliente</a>
                     </li>
                     <li>
-                        <a href="sugerencias"><i class="fa fa-fw fa-paper-plane-o"></i> Consultar Clientes</a>
+                        <a href="consultarclientes.php"><i class="fa fa-fw fa-paper-plane-o"></i> Consultar Clientes</a>
                     </li>
             </div>
             <!-- /.navbar-collapse -->

@@ -4,16 +4,27 @@ include "index.php";
 
 <?php
 
-$valor1 = $_POST['valor1'];
-$valor2 = $_POST['valor2'];
-$valor3 = $_POST['valor3'];
-$valor4 = $_POST['valor4'];
-$valor5 = $_POST['valor5'];
-$valor6 = $_POST['valor6'];
-$valor7 = $_POST['valor7'];
-$valor8 = $_POST['valor8'];
+$valorcombo1 = $_POST['valorcombo1'];
+$multcombo1 = $_POST['multcombo1'];
+$valorcombo2 = $_POST['valorcombo2'];
+$multcombo2 = $_POST['multcombo2'];
+$valorcombo3 = $_POST['valorcombo3'];
+$multcombo3 = $_POST['multcombo3'];
+$valorcombo4 = $_POST['valorcombo4'];
+$multcombo4 = $_POST['multcombo4'];
+$valorchess = $_POST['valorchess'];
+$multchess = $_POST['multchess'];
+$valorgreen = $_POST['valorgreen'];
+$multgreen = $_POST['multgreen'];
+$valorlemon = $_POST['valorlemon'];
+$multlemon = $_POST['multlemon'];
+$valorcheddar = $_POST['valorcheddar'];
+$valorbebida = $_POST['valorbebida'];
+$multbebida = $_POST['multbebida'];
+$valorbatata = $_POST['valorbatata'];
+$multbatata = $_POST['multbatata'];
 
-$resultado = ($valor1 * $valor2) + ($valor3 * $valor4) + ($valor5 * $valor6) + ($valor7 * $valor8);
+$resultado = ($valorcombo1 * $multcombo1) + ($valorcombo2 * $multcombo2) + ($valorcombo3 * $multcombo3) + ($valorcombo4 * $multcombo4) + ($valorchess * $multchess) + ($valorgreen * $multgreen) + ($valorlemon * $multlemon) + ($valorbebida * $multbebida) + ($valorbatata * $multbatata);
 $resultado = number_format($resultado,'2');
 ?>
 
@@ -25,12 +36,7 @@ $resultado = number_format($resultado,'2');
 					<div class="panel-title">
 						<div class="row">
 							<div class="col-xs-6">
-								<h5><span class="glyphicon glyphicon-shopping-cart"></span> Montar combo</h5>
-							</div>
-							<div class="col-xs-6">
-								<button type="button" class="btn btn-primary btn-sm btn-block">
-									<span class="glyphicon glyphicon-share-alt"></span> adicione avulso
-								</button>
+								<h5><span class="glyphicon glyphicon-shopping-cart"></span> Monte o pedido</h5>
 							</div>
 						</div>
 					</div>
@@ -45,10 +51,10 @@ $resultado = number_format($resultado,'2');
 						</div>
 						<div class="col-xs-6">
 							<div class="col-xs-6 text-right">
-							<input type="text" name="valor1" class="text-muted" size="5" value="27.50"/>  x
+							<input type="text" name="valorcombo1" class="text-muted" size="5" value="27.50"/>  x
 							</div>
 							<div class="col-xs-4">
-							<input type="text" name="valor2" class="form-control input-sm" size="5"/>
+							<input type="text" name="multcombo1" class="form-control input-sm" size="5"/>
 							</div>
 						</div>
 					</div>
@@ -61,10 +67,10 @@ $resultado = number_format($resultado,'2');
 						</div>
 						<div class="col-xs-6">
 							<div class="col-xs-6 text-right">
-							<input type="text" name="valor3" class="text-muted" size="5" value="30.50"/>  x
+							<input type="text" name="valorcombo2" class="text-muted" size="5" value="30.50"/>  x
 							</div>
 							<div class="col-xs-4">
-							<input type="text" name="valor4" class="form-control input-sm" size="5"/>
+							<input type="text" name="multcombo2" class="form-control input-sm" size="5"/>
 							</div>
 						</div>
 					</div>
@@ -77,10 +83,10 @@ $resultado = number_format($resultado,'2');
 						</div>
 						<div class="col-xs-6">
 							<div class="col-xs-6 text-right">
-							<input type="text" name="valor5" class="text-muted" size="5" value="30.50"/>  x
+							<input type="text" name="valorcombo3" class="text-muted" size="5" value="30.50"/>  x
 							</div>
 							<div class="col-xs-4">
-							<input type="text" name="valor6" class="form-control input-sm" size="5"/>
+							<input type="text" name="multcombo3" class="form-control input-sm" size="5"/>
 							</div>
 						</div>
 					</div>
@@ -93,10 +99,106 @@ $resultado = number_format($resultado,'2');
 						</div>
 						<div class="col-xs-6">
 							<div class="col-xs-6 text-right">
-							<input type="text" name="valor7" class="text-muted" size="5" value="32.50"/>  x
+							<input type="text" name="valorcombo4" class="text-muted" size="5" value="32.50"/>  x
 							</div>
 							<div class="col-xs-4">
-							<input type="text" name="valor8" class="form-control input-sm" size="5"/>
+							<input type="text" name="multcombo4" class="form-control input-sm" size="5"/>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-xs-2"><img src="../img/burger.jpg" alt="LOGO" width="60px" weight="500px">
+						</div>
+						<div class="col-xs-4">
+							<h4 class="product-name"><strong>Cheese Burger</strong>
+						</div>
+						<div class="col-xs-6">
+							<div class="col-xs-6 text-right">
+							<input type="text" name="valorchess" class="text-muted" size="5" value="14.50"/>  x
+							</div>
+							<div class="col-xs-4">
+							<input type="text" name="multchess" class="form-control input-sm" size="5"/>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-xs-2"><img src="../img/burger.jpg" alt="LOGO" width="60px" weight="500px">
+						</div>
+						<div class="col-xs-4">
+							<h4 class="product-name"><strong>Green Mayo</strong>
+						</div>
+						<div class="col-xs-6">
+							<div class="col-xs-6 text-right">
+							<input type="text" name="valorgreen" class="text-muted" size="5" value="17.50"/>  x
+							</div>
+							<div class="col-xs-4">
+							<input type="text" name="multgreen" class="form-control input-sm" size="5"/>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-xs-2"><img src="../img/burger.jpg" alt="LOGO" width="60px" weight="500px">
+						</div>
+						<div class="col-xs-4">
+							<h4 class="product-name"><strong>Bacon Lemon Pepper</strong>
+						</div>
+						<div class="col-xs-6">
+							<div class="col-xs-6 text-right">
+							<input type="text" name="valorlemon" class="text-muted" size="5" value="17.50"/>  x
+							</div>
+							<div class="col-xs-4">
+							<input type="text" name="multlemon" class="form-control input-sm" size="5"/>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-xs-2"><img src="../img/burger.jpg" alt="LOGO" width="60px" weight="500px">
+						</div>
+						<div class="col-xs-4">
+							<h4 class="product-name"><strong>Cheddar</strong>
+						</div>
+						<div class="col-xs-6">
+							<div class="col-xs-6 text-right">
+							<input type="text" name="valorcheddar" class="text-muted" size="5" value="19.50"/>  x
+							</div>
+							<div class="col-xs-4">
+							<input type="text" name="multcheddar" class="form-control input-sm" size="5"/>
+							</div>
+						</div>
+					</div>
+					<hr>
+                    <div class="row">
+						<div class="col-xs-2"><img src="../img/sucorefri.jpg" alt="LOGO" width="60px" weight="500px">
+						</div>
+						<div class="col-xs-4">
+							<h4 class="product-name"><strong>Bebida</strong>
+						</div>
+						<div class="col-xs-6">
+							<div class="col-xs-6 text-right">
+							<input type="text" name="valorbebida" class="text-muted" size="5" value="5.00"/>  x
+							</div>
+							<div class="col-xs-4">
+							<input type="text" name="multbebida" class="form-control input-sm" size="5"/>
+							</div>
+						</div>
+					</div>
+					<hr>
+                    <div class="row">
+						<div class="col-xs-2"><img src="../img/batata.jpg" alt="LOGO" width="60px" weight="500px">
+						</div>
+						<div class="col-xs-4">
+							<h4 class="product-name"><strong>Batata Frita</strong>
+						</div>
+						<div class="col-xs-6">
+							<div class="col-xs-6 text-right">
+							<input type="text" name="valorbatata" class="text-muted" size="5" value="5.00"/>  x
+							</div>
+							<div class="col-xs-4">
+							<input type="text" name="multbatata" class="form-control input-sm" size="5"/>
 							</div>
 						</div>
 					</div>
@@ -117,7 +219,7 @@ $resultado = number_format($resultado,'2');
 							<h4 class="text-right">Total <strong>R$ <?php echo ("$resultado"); ?></strong></h4>
 						</div>
 						<div class="col-xs-3">
-						<input type="submit" name="calcularbnt" value="calcular" class="btn btn-success btn-block">
+							<input type="submit" name="calcularbnt" value="calcular" class="btn btn-success btn-block">
 							</button><br>
 							<button type="submit"  class="btn btn-link btn-xs">apagar
 									<span class="glyphicon glyphicon-trash"> </span>
@@ -132,6 +234,9 @@ $resultado = number_format($resultado,'2');
 </form>
 <script type="text/javascript">
 
+
 </script>
 </body>
 </html>
+			
+				
