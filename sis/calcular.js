@@ -47,6 +47,18 @@ function somar() {
 }
 
 function apagar() {
-    var res = document.getElementById('res');
+    document.getElementById('multcombo1').value = ""
+    document.getElementById('multcombo1').value = ""
+    document.getElementById('multcombo2').value = ""
+    document.getElementById('multcombo3').value = ""
+    document.getElementById('multcombo4').value = ""
+    document.getElementById('multchess').value = ""
+    document.getElementById('multgreen').value = ""
+    document.getElementById('multlemon').value = ""
+    document.getElementById('multcheddar').value = ""
+    document.getElementById('multbebida').value = ""
+    document.getElementById('multbatata').value = ""
+    var res = document.getElementById('res')
     res.innerText = "Total"
+
 }
