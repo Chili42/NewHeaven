@@ -43,7 +43,14 @@ function somar() {
     var multbatata = Number(multbatata.value);
 
     var resultado = (valorcombo1 * multcombo1) + (valorcombo2 * multcombo2) + (valorcombo3 * multcombo3) + (valorcombo4 * multcombo4) + (valorchess * multchess) + (valorgreen * multgreen) + (valorlemon * multlemon) + (valorcheddar * multcheddar) + (valorbebida * multbebida) + (valorbatata * multbatata);
-    res.innerText = `Total R$ ${resultado}`
+    
+    var valorFormatado = resultado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+	
+    res.innerText = `Total ${valorFormatado}`
+
+    function valorFormatado(){
+        console.log(valorFormatado)
+    }
 }
 
 function apagar() {
@@ -62,3 +69,5 @@ function apagar() {
     res.innerText = "Total"
 
 }
+
+
